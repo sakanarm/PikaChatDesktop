@@ -13,6 +13,7 @@ pyinstaller --noconfirm --clean --onefile --windowed ^
     --name PikaChatDesktop ^
     --icon assets\pika\icon.ico ^
     --add-data "assets;assets" ^
+    --hidden-import _cffi_backend ^
     --exclude-module asr --exclude-module numpy --exclude-module onnxruntime ^
     --exclude-module PIL --exclude-module sprites --exclude-module voice ^
     main.py || goto :error

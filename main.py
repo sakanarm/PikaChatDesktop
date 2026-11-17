@@ -28,8 +28,8 @@ from textutil import shorten
 
 # ─── process setup ────────────────────────────────────────────────
 def setup_logging():
-    """Windowed builds have no console: write prints to %APPDATA%\\PikaChatDesktop\\pika.log."""
-    if sys.stdout is None or sys.stderr is None:
+    """The .exe (and pythonw) have no console: write prints to %APPDATA%\\PikaChatDesktop\\pika.log."""
+    if getattr(sys, "frozen", False) or sys.stdout is None or sys.stderr is None:
         try:
             os.makedirs(config.CONFIG_DIR, exist_ok=True)
             path = os.path.join(config.CONFIG_DIR, "pika.log")
