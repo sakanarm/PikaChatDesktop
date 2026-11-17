@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Local speech models (~1 GB, see download_models.py)
+models/
+*.onnx
+*.onnx.data
+
+# Never commit keys / local settings
+config*.json
+.env
+*.log
+
+# Editor / tools
+.qodo/
+.vscode/
+.idea/
+
+# Old prototype images (not part of the app)
+/blink.png
+/happy.png
+/idle.png
+/sleeping.png
+/smile.png
+.venv-build/

@@ -1,0 +1,3 @@
+# Runtime (the whole app needs only these two besides the Python stdlib)
+edge-tts>=6.1
+miniaudio>=1.59

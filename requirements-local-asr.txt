@@ -1,0 +1,6 @@
+# Optional: offline Thai speech-to-text (iApp OpenThai2.0-ASR, ~1 GB model)
+# pip install -r requirements-local-asr.txt && python download_models.py
+-r requirements.txt
+numpy
+onnxruntime
+huggingface_hub

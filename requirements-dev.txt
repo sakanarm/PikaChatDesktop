@@ -1,0 +1,5 @@
+# Build tools: regenerate sprites (sprites.py) and build the .exe (build.bat)
+-r requirements.txt
+pillow
+numpy
+pyinstaller
